@@ -9,7 +9,7 @@ const writer = fs.createWriteStream("./bar.txt", {
     start: 3
 })
 
-writer.write("你好啊", (err) => {
+writer.write("Zohnny", (err) => {
     console.log("写入成功")
 })
 
@@ -24,7 +24,7 @@ writer.on("open", () => {
 writer.end("Hello")
 
 
-writer.close()
+// writer.close()
 
 writer.on("close", () => {
     console.log("文件关闭")
